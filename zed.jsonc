@@ -1,0 +1,115 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // === UI Appearance ===
+  "theme": "Github Dark",
+  "icon_theme": "Catppuccin Frappé",
+  "buffer_line_height": "comfortable",
+  "cursor_shape": "bar",
+  "current_line_highlight": "line",
+  "text_rendering_mode": "platform_default",
+  "show_whitespaces": "all",
+  "minimap": {
+    "show": "never",
+  },
+  "scrollbar": {
+    "cursors": true,
+    "git_diff": true,
+  },
+
+  // === Editor Behavior ===
+  "tab_size": 2,
+  "format_on_save": "off",
+  "remove_trailing_whitespace_on_save": false,
+  "ensure_final_newline_on_save": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "file_scan_exclusions": ["**/__pycache__", "**/.git"],
+  "use_smartcase_search": true,
+  "base_keymap": "JetBrains",
+
+  // === Tabs & Panels ===
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors",
+  },
+  "toolbar": {
+    "code_actions": true,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": true,
+  },
+  "status_bar": {
+    "line_endings_button": true,
+  },
+  "git_panel": {
+    "tree_view": true,
+  },
+
+  // === Git ===
+  "git": {},
+
+  // === Language & LSP ===
+  "language_servers": ["!eslint", "!vtsls", "!basedpyright", "..."],
+  "lsp_document_colors": "inlay",
+  "lsp": {},
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "preferred_line_length": 120,
+      "language_servers": ["ty", "ruff"],
+    },
+    "TypeScript": {},
+    "JavaScript": {},
+  },
+
+  // === Inlay Hints & Predictions ===
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": false,
+    "show_other_hints": true,
+    "show_parameter_hints": true,
+    "show_type_hints": false,
+    "show_value_hints": true,
+  },
+  "edit_predictions": {
+    "mode": "eager",
+  },
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+
+  // === Agent & AI ===
+  "agent": {
+    "use_modifier_to_send": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+    },
+  },
+
+  // === Vim & Keybindings ===
+  "vim_mode": true,
+  "vim": {},
+  "relative_line_numbers": "enabled",
+
+  // === Debugger ===
+  "debugger": {
+    "timeout": 10000,
+  },
+}
