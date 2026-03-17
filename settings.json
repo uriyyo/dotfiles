@@ -1,0 +1,129 @@
+{
+    // ── Appearance ──────────────────────────────────────────────
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.activityBar.compact": true,
+    "workbench.tree.indent": 24,
+    "breadcrumbs.enabled": false,
+
+    // ── Editor ──────────────────────────────────────────────────
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.5,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.showFoldingControls": "never",
+
+    // ── Explorer ────────────────────────────────────────────────
+    "explorer.openEditors.visible": 1,
+    "explorer.decorations.colors": false,
+
+    // ── Files ───────────────────────────────────────────────────
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ruff_cache": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/*.egg-info": true,
+    },
+
+    // ── Terminal ────────────────────────────────────────────────
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+
+    // ── Git ─────────────────────────────────────────────────────
+    "git.openRepositoryInParentFolders": "always",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+
+    // ── AI / Chat ───────────────────────────────────────────────
+    "chat.agent.enabled": true,
+    "chat.viewSessions.orientation": "stacked",
+    "inlineChat.enableV2": true,
+    "claudeCode.selectedModel": "default",
+
+    // ── Spelling ────────────────────────────────────────────────
+    "cSpell.userWords": [
+        "Coro",
+        "dagster",
+        "logfire"
+    ],
+
+    // ── Vim: General ────────────────────────────────────────────
+    "vim.leader": "<Space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    // "vim.sneak": true,
+
+    // ── Vim: Handle Keys ────────────────────────────────────────
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+
+    // ── Vim: Visual Mode Bindings ───────────────────────────────
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // Delete without yanking
+            "before": ["leader", "d"],
+            "after": ["\"", "_", "d"]
+        },
+        {
+            // Paste over without yanking replaced text
+            "before": ["leader", "p"],
+            "after": ["p", "g", "v", "y"]
+        }
+    ],
+
+    // ── Vim: Normal Mode Bindings ───────────────────────────────
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // Delete without yanking (works with motions)
+            "before": ["leader", "d"],
+            "after": ["\"", "_", "d"]
+        },
+        {
+            // Scroll down + center
+            "before": ["<C-d>"],
+            "after": ["<C-d>", "z", "z"]
+        },
+        {
+            // Scroll up + center
+            "before": ["<C-u>"],
+            "after": ["<C-u>", "z", "z"]
+        },
+        {
+            // Clear search highlight
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            // Insert line break
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        },
+        {
+            // Vertical split
+            "before": ["leader", "v"],
+            "commands": [":vsplit"]
+        },
+        {
+            // Horizontal split
+            "before": ["leader", "s"],
+            "commands": [":split"]
+        }
+    ],
+
+    // ── Vim: Extension Affinity ─────────────────────────────────
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+}
+
