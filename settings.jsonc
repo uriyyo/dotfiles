@@ -17,7 +17,8 @@
 
     // ── Explorer ────────────────────────────────────────────────
     "explorer.openEditors.visible": 1,
-    "explorer.decorations.colors": false,
+    "explorer.decorations.colors": true,
+    "problems.decorations.enabled": false,
 
     // ── Files ───────────────────────────────────────────────────
     "files.autoSave": "afterDelay",
@@ -28,6 +29,13 @@
         "**/.mypy_cache": true,
         "**/.pytest_cache": true,
         "**/*.egg-info": true,
+    },
+
+    // ── Color Customizations ──────────────────────────────────────
+    "workbench.colorCustomizations": {
+        "gitDecoration.untrackedResourceForeground": "#808080",
+        "list.errorForeground": "#e1e4e8",
+        "list.warningForeground": "#e1e4e8"
     },
 
     // ── Terminal ────────────────────────────────────────────────
